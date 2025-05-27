@@ -1,0 +1,27 @@
+----------------------------------
+Tool: ChatGPT
+Date: 2025-04-15
+----------------------------------
+
+Me: My bot sometimes returns weird answers like “Today is sunny” even if it's raining. What can I do?
+
+AI: Make sure you're using the right index. For example:
+```python
+desc = data["weather"][0]["hourly"][0]["weatherDesc"][0]["value"]
+```
+
+Me: I was using the wrong hour, I think. Can I show the full forecast in the chatbot response?
+
+AI: You can loop through days:
+```python
+for day in data["weather"]:
+    print(day["date"], day["maxtempC"])
+```
+Or summarise just today:
+```python
+today = data["weather"][0]
+temp = today["maxtempC"]
+desc = today["hourly"][0]["weatherDesc"][0]["value"]
+```
+
+Me: Makes sense. I’ll clean it up to show only one day in chatbot for now.

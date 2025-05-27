@@ -1,0 +1,35 @@
+Tool: ChatGPT
+Date: 2025-04-14
+
+Me: I want to let users ask natural language questions like “Will it rain in Perth?” or “What’s the temperature in Sydney?” How do I parse these?
+
+AI: Start by extracting two key things:
+- Location
+- Attribute (e.g., temperature or rain)
+
+Me: Can you show pseudocode?
+
+AI:
+```python
+def parse_question(q):
+    for word in known_weather_keywords:
+        if word in q:
+            attribute = word
+    for city in known_cities:
+        if city in q:
+            location = city
+    return {"location": location, "attribute": attribute}
+```
+
+Me: Should I lowercase the question first?
+
+AI: Yes! Always lowercase input before matching keywords:
+```python
+q = q.lower()
+```
+
+Me: Any edge cases to watch for?
+
+AI: Yes:
+- No location found → return a default or error
+- Invalid spelling → consider fuzzy matching (future upgrade)

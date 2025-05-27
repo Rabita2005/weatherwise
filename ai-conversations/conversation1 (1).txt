@@ -1,0 +1,30 @@
+Tool: ChatGPT
+Date: 2025-04-12
+
+Me: I’m building a weather app for uni and I want to extract temperature from this JSON: `data["current_condition"][0]["temp_C"]`. What’s the best way to do this safely?
+
+AI: You can access it directly like this:
+```python
+temp = data["current_condition"][0]["temp_C"]
+```
+However, to be safe against missing data, use:
+```python
+try:
+    temp = data["current_condition"][0]["temp_C"]
+except (KeyError, IndexError, TypeError):
+    temp = "N/A"
+```
+
+Me: Good point. What if the entire 'current_condition' key is missing?
+
+AI: Then `data.get("current_condition")` will return `None`. You can update the code:
+```python
+try:
+    temp = data.get("current_condition", [{}])[0].get("temp_C", "N/A")
+except Exception:
+    temp = "N/A"
+```
+
+Me: That’s neat. Is it better to use `.get()` everywhere for this kind of data?
+
+AI: Yes, `.get()` is ideal when parsing nested, optional JSON data. It prevents hard crashes and lets you gracefully handle missing fields.

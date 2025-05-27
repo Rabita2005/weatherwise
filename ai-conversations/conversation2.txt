@@ -1,0 +1,43 @@
+Tool: ChatGPT
+Date: 2025-04-13
+
+Me: I want to visualise daily max temperature from weather data. I have a list of days and temperatures.
+
+AI: You can use matplotlib like this:
+```python
+import matplotlib.pyplot as plt
+
+days = ["2025-04-10", "2025-04-11"]
+temps = [22, 25]
+
+plt.plot(days, temps, marker='o')
+plt.title("Max Temperature Forecast")
+plt.xlabel("Date")
+plt.ylabel("Temp (°C)")
+plt.grid(True)
+plt.show()
+```
+
+Me: This works, but I want to modularise it. Can you give me a function?
+
+AI: Sure!
+```python
+def plot_temperature(days, temps):
+    plt.plot(days, temps, marker='o')
+    plt.title("Max Temperature Forecast")
+    plt.xlabel("Date")
+    plt.ylabel("Temp (°C)")
+    plt.grid(True)
+    plt.show()
+```
+
+Me: Now how do I feed it the data from my weather API?
+
+AI: Assuming `data["weather"]` is your forecast list:
+```python
+days = [day["date"] for day in data["weather"]]
+temps = [int(day["maxtempC"]) for day in data["weather"]]
+plot_temperature(days, temps)
+```
+
+Me: Great. I’ll integrate this into `create_temperature_visualisation()`. Thanks!

@@ -1,0 +1,22 @@
+Tool: ChatGPT
+Date: 2025-04-16
+
+Me: I want to structure my notebook for a full-mark submission. The rubric requires clean section headers, modular design, and testing.
+
+AI: Split the notebook into these markdown-labeled sections:
+1. Setup & Imports
+2. Weather Data Functions
+3. Visualisation
+4. NLP Parsing
+5. Response Generation
+6. User Interface
+7. Testing Section
+
+Me: Should I put each function in its own cell?
+
+AI: Yes. Group related functions in one cell. Add clear comments and docstrings. Also:
+- Add `# 🔁 Main Application Logic`
+- Use `pyinputplus` for UI
+- Include a test cell that runs one full use case
+
+Me: Got it. This will help the markers follow my logic too. Thanks!
