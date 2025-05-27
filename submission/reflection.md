@@ -1,7 +1,7 @@
 # ✍️ Project Reflection
 
 ## AI Tools Used
-For this project, I mainly used ChatGPT to help me with coding problems and decision-making. It wasn’t just about getting answers but also I used it like a partner to genrate ideas, especially when I was stuck or unsure about how to approach a function. I also set up the hands-on-ai package with the granite3.2 model, which made it possible to generate live responses inside my weather app. This made the chatbot feel more real and showed how AI could be part of actual software.
+For this project, I mainly used ChatGPT to help me with coding problems and decision-making. It wasn’t just about getting answers but also I used it like a partner to genrate ideas, especially when I was stuck or unsure about how to approach a function. I also set up the hands-on-ai package with the granite3.2 model, which made it possible to generate live responses inside my weather app. This made the chatbot feel more real and showed how AI could be part of actual software. I also used copilot to improve my codes and for adding comments.
 
 ## Prompting Techniques
 I tried to be really intentional with how I used AI. Before asking for code, I would often explain what I was trying to do in my own words so the AI could understand my thinking. I also asked for pseudocode first to help me plan, and then moved on to actual implementation. I checked how the AI handled edge cases too, like what happens if a user doesn’t enter a location. I think treating AI as a teammate instead of just copying code helped me understand things better and build more solid features.
