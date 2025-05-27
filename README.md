@@ -1,63 +1,86 @@
-# 🌦️ WeatherWise Template
+# 🌦️ WeatherWise – Intelligent Weather Analysis App
 
-Welcome to the **WeatherWise Assignment Starter Template**! This repository helps you kickstart your project by combining Python, weather APIs, data visualisation, and AI-assisted development. 🤖📊
-
-![Build With AI](https://img.shields.io/badge/Built_with-AI-blueviolet?logo=openai)
-![Python](https://img.shields.io/badge/Made_with-Python-3776AB?logo=python)
-![Visualisation](https://img.shields.io/badge/Includes-Visualisations-orange?logo=plotly)
+Welcome to **WeatherWise**, an AI-assisted Python application designed to provide accurate, insightful, and interactive weather forecasts. Built by a Rabita Sami, this project showcases modular coding, data visualisation, and conversational AI integration.
 
 ---
 
-## 🚀 How to Use This Template
+## Features
 
-1. Click **"Use this template"** on GitHub to create your own copy.
-2. Rename your repository to something like `weatherwise-jane-doe`.
-3. Clone it and start developing in `starter_notebook.ipynb`.
-
----
-
-## 📁 Folder Structure
-
-- `starter_notebook.ipynb` — Main notebook to build your project.
-- `ASSIGNMENT.md` — Full assignment specification.
-- `ai-conversations/` — Save your `.txt` AI conversations here.
-- `resources/` — Guides, prompting tips, and AI technique examples.
-- `submission/` — Files to help you finalise your submission:
-  - `checklist-md.md` — Submission checklist
-  - `reflection.md` — Write your 300–500 word project reflection
-  - `one-page-summary.md` — (Optional) Your own summary of key ideas or process
+-  Real-time weather data using the **wttr.in API**
+-  Multiple visualisations:
+  - Max/Min Temperature Trends
+  - Daily Rainfall Forecast
+  - Humidity Levels at Midday
+-  Natural Language Interface:
+  - Ask questions like "Will it rain in Sydney?" or "How hot will it be in Hanoi?"
+-  Testing Function:
+  - Built-in diagnostics to validate key components
+-  Built using intentional AI prompting and iterative design
 
 ---
 
-📄 **Quick Overview:**  
-A one-page summary of the full assignment is available in [`resources/assignment-summary.md`](resources/assignment-summary.md).
+## Technologies Used
+
+- **Python 3**
+- `requests` – HTTP calls to weather API
+- `matplotlib` – Visualisation
+- `pyinputplus` – User-friendly menus
+- `hands-on-ai` – AI chat interface
+- `fetch-my-weather` (optional) – For alternative data access
 
 ---
 
-## 📓 Submission Checklist
+## How to Run (Google Colab Recommended)
 
-✅ Complete all required functions  
-✅ Include at least 5 AI conversations in `ai-conversations/`  
-✅ Document your intentional prompting  
-✅ Fill in your project reflection in `submission/reflection-template.md`  
-✅ Zip your project and upload it to the LMS  
+1. Open the `starter_notebook.ipynb` in **Google Colab**.
+2. Run the first cell to install any required packages (if not pre-installed).
+3. Click **Run All** or follow the notebook section by section.
+4. Choose options from the **WeatherWise Menu**:
+   - View forecasts and visualisations
+   - Ask questions via the AI chatbot
+   - Run built-in test suite
 
 ---
 
-🧠 AI Conversations  
-Save your AI interactions in the `ai-conversations/` folder.  
-See `ai-conversations/how-to-log-ai-conversations.md` for details.
+## Folder Structure
 
+- `starter_notebook.ipynb` — Main application notebook
+- `submission/`
+  - `reflection.md` — My personal reflection
+  - `checklist.md` — Submission checklist
+- `ai-conversations/`
+  - `conversation1.txt` to `conversation5.txt` — Documented AI development logs
+- `README.md` — Project overview
 
---
-## 🧠 Need Help with AI Prompts?
+---
 
-Check out:
-Check out:
-- `resources/ai-tips-tricks.md` — Prompting tips and pitfalls
-- `resources/sample-prompting-journey.md` — Full example of AI-enhanced development
-- `resources/prompts-by-method-step.md` — Prompts aligned with the 6-step dev process
-- `resources/before-after-example.md` — Required: Show how your prompting improved AI-generated code
+## AI Tools Used
 
+- **ChatGPT** 
+- Used to:
+  - Explore design decisions
+  - Generate/refactor code
+  - Improve chatbot logic
+  - Add visualisation enhancements
 
-Good luck and have fun! 💡🌤️
+Prompting techniques included:
+- Restating problems
+- Pseudocode before implementation
+- Iterative feedback loops
+- Querying edge cases and usability
+
+---
+
+## Example Questions to Try
+
+- “What’s the temperature in Perth today?”
+- “Will it rain in Sydney tomorrow?”
+- “Is it humid in Hanoi?”
+
+---
+
+##  Final Notes
+
+This project demonstrates how i without a tech background can build a practical, intelligent weather tool using Python and AI guidance. The entire process—from planning to execution—was shaped through intentional prompting, critical thinking, and creative iteration.
+
+Enjoy using WeatherWise! 
