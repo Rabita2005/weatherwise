@@ -1,5 +1,5 @@
 Tool: ChatGPT
-Date: 2025-04-16
+Date: 2025-05-16
 
 Me: I want to structure my notebook for a full-mark submission. The rubric requires clean section headers, modular design, and testing.
 
