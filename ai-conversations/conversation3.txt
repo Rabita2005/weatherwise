@@ -1,5 +1,5 @@
 Tool: ChatGPT
-Date: 2025-04-14
+Date: 2025-05-14
 
 Me: I want to let users ask natural language questions like “Will it rain in Perth?” or “What’s the temperature in Sydney?” How do I parse these?
 
